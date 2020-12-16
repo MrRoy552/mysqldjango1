@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="" method="post">
+    {% csrf_token%}
+    <div>
+    <input type="text" name="name" placeholder="enter name" value="{{obj.name}}"><br>
+    <input type="text" name="gender" placeholder="enter gender" value="{{obj.gender}}"><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+    <input type="text" name="salary" placeholder="enter your salary" value="{{obj.salary}}"><br>
+    <input type="text" name="phone_number" placeholder="enter phone number" value="{{obj.phone_number}}"><br>
+    <input type="text" name="Emp_address" placeholder="enter Emp_address" value="{{obj.Emp_address}}"><br>
+    <input type="submit" value="update">
+    </div>
+</form>
+</body>
+</html>
